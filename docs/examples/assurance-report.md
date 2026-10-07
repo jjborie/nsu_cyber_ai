@@ -1,6 +1,6 @@
 # Historical NSU assurance report example
 
-Generated October 7, 2026 from run `20261007185012246-6925f244`. This snapshot is not a current repository assessment. Raw local evidence is not bundled. Open [the full HTML report](assurance-report.html) locally for executive findings, KPIs, dependency inventory, framework mappings, risk matrix, and control alignment.
+Generated October 7, 2026 from run `20261007185012246-6925f244`. This snapshot is not a current repository assessment. Raw local evidence is not bundled. Open [the full HTML report](https://jjborie.github.io/nsu_cyber_ai/assurance-report.html) locally for executive findings, KPIs, dependency inventory, framework mappings, risk matrix, and control alignment.
 
 ![NSU report preview](assurance-report-preview.png)
 

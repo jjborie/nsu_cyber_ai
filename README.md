@@ -95,4 +95,4 @@ Optional open-source [SonarQube Community Build](docs/SONAR.md) includes local s
 
 ## Example assurance report
 
-See the [generated report example](docs/examples/assurance-report.md) and download/open the [full NSU HTML report](docs/examples/assurance-report.html) in a browser. This historical example shows executive findings, KPIs, package dependencies, Semgrep results, threat mappings, and selected control alignment. Raw local evidence is omitted; Sonar and Kali/PentestGPT are explicitly marked as not run.
+See the [generated report example](docs/examples/assurance-report.md) and open the [full NSU HTML report](https://jjborie.github.io/nsu_cyber_ai/assurance-report.html) in a browser. This historical example shows executive findings, KPIs, package dependencies, Semgrep results, threat mappings, and selected control alignment. Raw local evidence is omitted; Sonar and Kali/PentestGPT are explicitly marked as not run.

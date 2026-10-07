@@ -70,4 +70,4 @@ Report the initial defects, local changes, original and retest IDs, observed res
 
 ## Generated example
 
-Read the [historical report summary](examples/assurance-report.md), or download/open the [full NSU HTML example](examples/assurance-report.html) locally. It preserves the actual October 7, 2026 run results and framework mapping. Artifact names are references; raw local evidence is not published. Generate a new run for current-source evidence. GitHub shows HTML source rather than hosting this report as a website.
+Read the [historical report summary](examples/assurance-report.md), or open the [full NSU HTML example](https://jjborie.github.io/nsu_cyber_ai/assurance-report.html) in your browser. It preserves the actual October 7, 2026 run results and framework mapping. Artifact names are references; raw local evidence is not published. Generate a new run for current-source evidence. GitHub Pages hosts the rendered example; the repository retains its HTML source.
