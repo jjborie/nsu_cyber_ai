@@ -92,3 +92,7 @@ See [tool setup](docs/TOOLS.md) and [the autonomous assurance workflow](docs/ASS
 Contributions: see [CONTRIBUTING.md](CONTRIBUTING.md). License: [MIT](LICENSE). Created as an independent educational example; no institutional endorsement is implied.
 
 Optional open-source [SonarQube Community Build](docs/SONAR.md) includes local server setup, a pinned scanner, quality gate evidence, and linked remediation retests. The [Kali/PentestGPT lab](docs/KALI-LAB.md) provides a supervised local exercise. Assurance reports use the versioned mapping in `security/framework-map.json` to explain selected OWASP, ASVS, CWE, and ATT&CK relationships; they identify control gaps rather than claiming full compliance.
+
+## Example assurance report
+
+See the [generated report example](docs/examples/assurance-report.md) and download/open the [full NSU HTML report](docs/examples/assurance-report.html) in a browser. This historical example shows executive findings, KPIs, package dependencies, Semgrep results, threat mappings, and selected control alignment. Raw local evidence is omitted; Sonar and Kali/PentestGPT are explicitly marked as not run.

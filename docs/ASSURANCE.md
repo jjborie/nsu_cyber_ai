@@ -67,3 +67,7 @@ npm run assurance -- report --run RUN_ID
 ```
 
 Report the initial defects, local changes, original and retest IDs, observed results, and remaining blockers. Link the HTML report and relevant artifacts. Keep security, accessibility, performance, and shared verification conclusions separate. “No automated failures observed” is narrower than “secure” or “accessible.” The performance check is diagnostic timing collection, not a qualified regression comparison. No overall release clearance is produced.
+
+## Generated example
+
+Read the [historical report summary](examples/assurance-report.md), or download/open the [full NSU HTML example](examples/assurance-report.html) locally. It preserves the actual October 7, 2026 run results and framework mapping. Artifact names are references; raw local evidence is not published. Generate a new run for current-source evidence. GitHub shows HTML source rather than hosting this report as a website.
