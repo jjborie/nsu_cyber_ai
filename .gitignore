@@ -1,0 +1,17 @@
+**/bin/
+**/obj/
+.vs/
+.idea/
+.env
+.env.*
+!.env.example
+*.user
+*.log
+TestResults/
+node_modules/
+src/StudentLab/wwwroot/
+coverage/
+.local/
+playwright-report/
+test-results/
+.sonarqube/

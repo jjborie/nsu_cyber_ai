@@ -1,0 +1,205 @@
+{
+  "tools": {
+    "node": {
+      "command": "node",
+      "args": [
+        "--version"
+      ],
+      "minimumMajor": 22,
+      "minimumVersion": "22.22.0",
+      "installId": "OpenJS.NodeJS.LTS",
+      "source": "https://nodejs.org/en/download"
+    },
+    "dotnet": {
+      "command": "dotnet",
+      "args": [
+        "--list-sdks"
+      ],
+      "minimumMajor": 10,
+      "installId": "Microsoft.DotNet.SDK.10",
+      "source": "https://learn.microsoft.com/dotnet/core/install/windows"
+    },
+    "pwsh": {
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-Command",
+        "$PSVersionTable.PSVersion.ToString()"
+      ],
+      "minimumMajor": 7,
+      "installId": "Microsoft.PowerShell",
+      "source": "https://learn.microsoft.com/powershell/scripting/install/install-powershell"
+    },
+    "git": {
+      "command": "git",
+      "args": [
+        "--version"
+      ],
+      "installId": "Git.Git",
+      "source": "https://git-scm.com/downloads"
+    },
+    "vite": {
+      "package": "vite",
+      "install": "npm ci"
+    },
+    "vitest": {
+      "package": "vitest",
+      "install": "npm ci"
+    },
+    "playwright": {
+      "package": "@playwright/test",
+      "install": "npm ci"
+    },
+    "axe": {
+      "package": "@axe-core/playwright",
+      "install": "npm ci"
+    },
+    "chromium": {
+      "browser": true,
+      "install": "playwright install chromium"
+    },
+    "xunit": {
+      "restore": "tests/StudentLab.Tests/StudentLab.Tests.csproj",
+      "install": "dotnet restore StudentLab.slnx"
+    },
+    "python": {
+      "command": "python",
+      "args": [
+        "--version"
+      ],
+      "minimumMajor": 3,
+      "installId": "Python.Python.3.12",
+      "source": "https://www.python.org/downloads/"
+    },
+    "semgrep": {
+      "localCommand": "semgrep",
+      "install": "project-local Python venv + security/requirements.txt"
+    },
+    "docker": {
+      "command": "docker",
+      "args": [
+        "--version"
+      ],
+      "installId": "Docker.DockerDesktop",
+      "source": "https://docs.docker.com/get-started/get-docker/"
+    },
+    "sonar-scanner": {
+      "scanner": true,
+      "install": "pwsh -File scripts/sonar.ps1 -Mode Install"
+    }
+  },
+  "skills": {
+    "accessibility": [
+      "node",
+      "dotnet",
+      "vite",
+      "playwright",
+      "axe",
+      "chromium"
+    ],
+    "assurance-cycle": [
+      "node",
+      "dotnet",
+      "pwsh",
+      "git",
+      "vite",
+      "vitest",
+      "playwright",
+      "axe",
+      "chromium",
+      "xunit",
+      "python",
+      "semgrep"
+    ],
+    "build-and-verify": [
+      "node",
+      "dotnet",
+      "pwsh",
+      "vite",
+      "vitest",
+      "xunit"
+    ],
+    "code-quality": [
+      "node",
+      "dotnet",
+      "pwsh",
+      "git",
+      "vite",
+      "vitest",
+      "xunit",
+      "python",
+      "semgrep"
+    ],
+    "cve-assessment": [
+      "node",
+      "dotnet",
+      "xunit"
+    ],
+    "dast-deployment-guard": [
+      "node",
+      "dotnet",
+      "vite",
+      "playwright",
+      "chromium"
+    ],
+    "e2e-gate": [
+      "node",
+      "dotnet",
+      "pwsh",
+      "vite",
+      "vitest",
+      "playwright",
+      "chromium",
+      "xunit"
+    ],
+    "performance": [
+      "node",
+      "dotnet",
+      "vite",
+      "playwright",
+      "chromium"
+    ],
+    "pr-workflow": [
+      "node",
+      "dotnet",
+      "pwsh",
+      "git",
+      "vite",
+      "vitest",
+      "xunit"
+    ],
+    "security-cycle": [
+      "node",
+      "dotnet",
+      "pwsh",
+      "git",
+      "vite",
+      "vitest",
+      "playwright",
+      "chromium",
+      "xunit",
+      "python",
+      "semgrep"
+    ],
+    "security-review": [
+      "node",
+      "dotnet",
+      "git"
+    ],
+    "security-threat-model": [
+      "node",
+      "git"
+    ],
+    "sonar": [
+      "node",
+      "dotnet",
+      "docker",
+      "sonar-scanner"
+    ],
+    "kali-lab": [
+      "node",
+      "git",
+      "docker"
+    ]
+  }
+}

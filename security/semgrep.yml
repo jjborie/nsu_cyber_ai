@@ -1,0 +1,27 @@
+rules:
+  - id: academic-js-unsafe-html
+    languages: [javascript, typescript]
+    severity: ERROR
+    message: User-controlled HTML sinks require review; use textContent for experiment titles.
+    pattern: $ELEMENT.innerHTML = $VALUE
+    metadata:
+      cwe: CWE-79
+      owasp: A05:2025 Injection
+  - id: academic-js-dynamic-code
+    languages: [javascript, typescript]
+    severity: ERROR
+    message: Avoid dynamic code execution at the browser trust boundary.
+    pattern-either:
+      - pattern: eval($VALUE)
+      - pattern: new Function(...)
+    metadata:
+      cwe: CWE-95
+      owasp: A05:2025 Injection
+  - id: academic-csharp-process-execution
+    languages: [csharp]
+    severity: WARNING
+    message: Process execution in application code needs a command-injection review.
+    pattern: Process.Start(...)
+    metadata:
+      cwe: CWE-78
+      owasp: A05:2025 Injection

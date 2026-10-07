@@ -1,0 +1,29 @@
+:root { font-family: system-ui, sans-serif; color: #192e43; background: #f1f5f9; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 800px; margin: 3rem auto; padding: 0 1.25rem; }
+header { margin-bottom: 2rem; }
+.eyebrow { color: #156b60; font-size: .8rem; font-weight: 700; letter-spacing: .12em; }
+h1 { font-size: clamp(2rem, 6vw, 3rem); margin: .5rem 0; letter-spacing: -.04em; }
+header p, footer { color: #526479; }
+aside { border-left: 4px solid #248375; padding: 1rem; background: #e0efeb; line-height: 1.5; margin-bottom: 1.5rem; }
+form, section { background: white; padding: 1.5rem; border: 1px solid #d7e0e8; border-radius: 12px; margin-bottom: 1rem; }
+form > label { display: block; font-weight: 600; margin-bottom: .75rem; }
+.input-row { display: flex; gap: .75rem; }
+input[type=text], input:not([type]) { min-width: 0; flex: 1; padding: .8rem; border: 1px solid #7b8c9f; border-radius: 6px; font: inherit; }
+button { cursor: pointer; padding: .8rem 1rem; background: #156b60; color: white; border: 0; border-radius: 6px; font: inherit; font-weight: 600; }
+button:disabled { opacity: .6; cursor: wait; }
+:focus-visible { outline: 3px solid #2379c6; outline-offset: 3px; }
+.section-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+h2 { font-size: 1.2rem; margin: 0; }
+#count { font-size: .85rem; color: #526479; }
+#status { line-height: 1.5; }
+#status:empty { display: none; }
+ul { list-style: none; padding: 0; margin-bottom: 0; }
+li { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 0; border-top: 1px solid #e0e7ed; }
+li label { display: flex; align-items: center; gap: .8rem; overflow-wrap: anywhere; }
+input[type=checkbox] { width: 1.2rem; height: 1.2rem; flex-shrink: 0; accent-color: #156b60; }
+.complete { text-decoration: line-through; color: #526479; }
+.remove { background: #f7e8e8; color: #8c2929; font-size: .85rem; }
+footer { text-align: center; margin-top: 2rem; font-size: .9rem; }
+@media (max-width: 520px) { main { margin-top: 1.5rem; } .input-row { flex-direction: column; } form, section { padding: 1rem; } }
